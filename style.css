@@ -1,0 +1,295 @@
+/* Splash Page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+.splash {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.splash h1 {
+    font-size: 3rem;
+}
+
+
+/* Splash Page Ipods */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.splash {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: url('img/splashback.png') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.image-container {
+    position: absolute;
+}
+
+.image1 {
+    top: 1%;
+    left: 5%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image2 {
+    top: 47%;
+    left: 3%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image3 {
+    top: 75%;
+    left: 8%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image1:hover{
+        transform: rotate(5deg); 
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.image2:hover{
+    transform: rotate(5deg); 
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.image3:hover{
+    transform: rotate(5deg); 
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+img {
+    width: 350px;
+    height: auto;
+}
+
+/* Entry Background */
+body:not(.index-page) {
+    background: url('img/entryback.jpeg') no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    background-color: #ffffff;
+    gap: 20px;
+    padding: 20px;
+}
+
+.navbar {
+    grid-column: span 2;
+    background-color: #003C8F;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; 
+}
+
+.navbar nav ul li {
+    display: inline;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: white; 
+    font-size: 25px;
+    font-family: "neuropol-nova", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar nav ul li a:hover {
+    color: lightgray;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: minmax(400px, 50%) 1fr; /* Left section takes at least 300px but up to 50% */
+    gap: 20px;
+    grid-column: span 2;
+}
+
+/* Left Section */
+.left-section {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: flex-start;
+    font-size: 18px;
+    color: #003C8F;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 150px;
+}
+
+
+.spotify-embed {
+    margin-top: 20px;
+    width: 90%;
+    max-width: 500px;
+}
+
+.left-section img {
+    width: 90%; 
+    max-width: 500px; 
+    height: auto;
+    border-radius: 10px;
+}
+
+.bigger-image {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.bigger-image:hover {
+    transform: rotate(5deg); 
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+/* Right Section */
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 350px; 
+}
+
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .left-section {
+        justify-content: center;
+    }
+
+    .left-section img {
+        max-width: 90%;
+    }
+}
+
+.header {
+    background-color:#003C8F;
+    color: white;
+    padding: 15px;
+    font-size: 22px;
+    font-family: "tt-travels-next", sans-serif;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.paragraph {
+    padding: 10px;
+    background-color: white;
+    font-family: "tt-travels-next", sans-serif;
+    border-left: 4px solid #003C8F;
+    line-height: 1.6;
+}
+
+.middle-banner {
+    background-color: #003C8F;
+    font-family: "tt-travels-next", sans-serif;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.sub-boxes {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    margin-top: 150px;
+}
+
+.box {
+    flex: 1;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #003C8F;
+}
+
+.box img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.box img:hover {
+    transform: rotate(5deg); 
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+/* Footer Section */
+
+.footer a {
+    color: white; 
+    text-decoration: none; 
+}
+
+.footer a:hover {
+    color: lightgray;
+}
+
+.footer {
+    grid-column: span 2;
+    text-align: right; 
+    padding: 10px;
+    background-color: #003C8F;
+    color: white;
+    margin-top: auto; 
+    height: 40px; 
+    font-family: "tt-travels-next", sans-serif;
+}
